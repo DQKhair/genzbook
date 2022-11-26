@@ -1,0 +1,106 @@
+.content_donhang{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content_donhang h1{
+
+}
+.header_cart_item_donhang{
+    display: flex;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.container_checkbox_all {
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+.content_donhang .checkbox_all_product{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+.header_cart_item_donhang div{
+}
+input[type="checkbox"] {
+    width: 20px;
+}
+
+
+/* content đơn hàng */
+.content_cart_item_donhang{
+    display: flex;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.item_product_cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_item_product_cart {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+.img_product_cart img{
+    width: 100px;
+}
+.checkbox_product_cart {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+.img_product_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8%;
+}
+.number_product_cart {
+    display: flex;
+}
+
+input[type="text"] {
+    width: 20%;
+    text-align: center;
+}
+.remove_empty_div,
+.remove_cart {
+    margin-right: 20px;
+}
+.product_view_quantity_box {
+    display: flex;
+    width: 6%;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.product_name_full_text h2{
+    font-size: 20px;
+    color: #727070;
+}
+.cart_price_total h2{
+    color: red;
+}
+.product_view_quantity_box>a>i,
+.remove_cart>a>i{
+color: #000;
+}
