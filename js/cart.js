@@ -1,0 +1,1 @@
+var chuyenthanhtoan = ()=> window.location.href="../donhang.html";

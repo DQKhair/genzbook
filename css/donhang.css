@@ -3,10 +3,18 @@
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.content_donhang h1{
+    display: flex;
 
 }
+.h1_content_donhang{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.content_donhang .left_content_donhang {
+    width: 60%;
+}
+
 .header_cart_item_donhang{
     display: flex;
     background-color: #f8f8f8;
@@ -26,11 +34,9 @@
     justify-content: center;
     width: 10%;
 }
-.header_cart_item_donhang div{
-}
-input[type="checkbox"] {
+.left_content_donhang input[type="checkbox"] {
     width: 20px;
-}
+}   
 
 
 /* content đơn hàng */
@@ -48,6 +54,9 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 .container_item_product_cart {
     display: flex;
@@ -78,9 +87,11 @@ input[type="checkbox"] {
     display: flex;
 }
 
-input[type="text"] {
-    width: 20%;
+.left_content_donhang .product_view_quantity_box input[type="text"] {
+    width: 30%;
     text-align: center;
+    border-radius: 3px;
+    border: 1px solid;
 }
 .remove_empty_div,
 .remove_cart {
@@ -88,7 +99,7 @@ input[type="text"] {
 }
 .product_view_quantity_box {
     display: flex;
-    width: 6%;
+    width: 10%;
     justify-content: space-around;
     justify-items: center;
 }
@@ -103,4 +114,111 @@ input[type="text"] {
 .product_view_quantity_box>a>i,
 .remove_cart>a>i{
 color: #000;
+}
+
+.right_content_donhang{
+    width: 40%;
+    margin-left: 30px;
+}
+.right_content_donhang .header_right_content_donhang{
+    display: flex;
+    background-color: #f8f8f8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 20px;
+    justify-content: space-between;
+    color: rgb(244,151,20);
+}
+.right_content_donhang .header_right_content_donhang div i,
+.right_content_donhang .header_right_content_donhang div:last-child a,
+.right_content_donhang .header_right_content_donhang div:first-child{
+display: flex;
+align-items: center;
+margin: 0 10px 0 10px;
+}
+
+.content_right_content_donhang{
+    display: flex;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+.content_right_content_donhang .gioithieuvoucher a,
+.content_right_content_donhang .gioithieuvoucher span,
+.content_right_content_donhang .gioithieuvoucher p{
+font-size: 15px;
+display: block;
+}
+.gioithieuvoucher{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.content_right_content_donhang .gioithieuvoucher input{
+    background-color: rgb(244,151,20);
+    border: 1px solid rgb(244,151,20);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--white-color);
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.content_right_content_donhang .gioithieuvoucher input:hover{
+    background-color: rgb(216,110,17);
+}
+.right_content_donhang .footer_gioithieuvoucher span{
+    font-size: 15px;
+    color: rgb(88, 86, 86);
+}
+.right_content_donhang .footer_gioithieuvoucher i{
+    color:rgb(244,151,20) ;
+    margin-right: 10px;
+}
+
+.footer_right_content_dohang{
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.footer_right_content_dohang .header_footer_right_thanhtoan{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.footer_right_content_dohang .content_footer_right_thanhtoan{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer_right_content_dohang .content_footer_right_thanhtoan div:last-child{
+    color: red;
+}
+.footer_right_content_dohang .content_footer_right_thanhtoan div:last-child h3{
+    font-size: 25px;
+}
+.footer_footer_right_thanhtoan input{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: red;
+    color: var(--white-color);
+    font-weight: 600;
+}
+.footer_footer_right_thanhtoan input:hover{
+    background-color: rgb(219, 19, 19);
+
 }
