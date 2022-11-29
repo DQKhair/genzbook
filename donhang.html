@@ -109,8 +109,10 @@
                 </div>
       
                 <div class="header__cark">
-                  <i class="header__cark-icon fa-solid fa-cart-shopping" onclick="showcart()"  ></i>
-                  <b id="countsp">0</b>
+                  <a href="./donhang.html">
+                    <i class="header__cark-icon fa-solid fa-cart-shopping"></i>
+                    <b id="countsp">0</b>
+                  </a>
                 </div>
               </div>
             </div>
@@ -134,7 +136,7 @@
               <li><a href="./khuyenmai.html">Khuyến mãi</a></li>
               <li><a href="./danhgia.html">Đánh giá</a></li>
               <li><a href="./yeuthich.html">Yêu thích</a></li>
-              <li><a href="./donhang.html">Đơn hàng</a></li>
+              <li><a href="./donhang.html">Giỏ hàng</a></li>
             </ul>
           </div>
     </nav>
@@ -169,7 +171,7 @@
                     </div>
                     <div class="inf_cart">
                         <div class="product_name_full_text">
-                            <h2>Có tiền có quyền</h2>
+                            <h2>Sách giải tích</h2>
                         </div>
                         <div class="cart_price"><h2>99.000 đ</h2></div>
                     </div>
@@ -198,7 +200,7 @@
                   </div>
                   <div class="inf_cart">
                       <div class="product_name_full_text">
-                          <h2>Có tiền có quyền</h2>
+                          <h2>Sách giải tích</h2>
                       </div>
                       <div class="cart_price"><h2>99.000 đ</h2></div>
                   </div>
@@ -233,14 +235,14 @@
             <h3>Trúng 30 triệu, Macbook, Vàng</h3>
             <p>Với mỗi đơn hàng trên 300k, cơ hội trúng 30 triệu, Macbook, Vàng, 1 triệu Zpoint và khóa học chachacha</p>
             <span>Mua thêm 300.000 đ để nhận mã</span>
-            <a href="#">Xem chi tiết</a>
+            <a href="##" onclick="detail_voucher1()">Xem chi tiết</a>
             <input type="button" value="Mua thêm">
           </div>
           <div class="gioithieuvoucher">
             <h3>Mã giảm 50K</h3>
             <p>Cho đơn hàng từ 500K - không áp dụng cho phiếu quà tặng</p>
             <span>Mua thêm 500.000 đ để nhận mã</span>
-            <a href="#">Xem chi tiết</a>
+            <a href="##" onclick="detail_voucher2()">Xem chi tiết</a>
             <input type="button" value="Mua thêm">
           </div>
           <div class="footer_gioithieuvoucher"><i class="fa-solid fa-circle-exclamation"></i><span>Có thể áp dụng đồng thời nhiều mã</span></div>
@@ -256,14 +258,69 @@
             <div><h3><span>0</span> đ</h3></div>
           </div>
           <div class="footer_footer_right_thanhtoan">
-            <input type="button" value="Thanh toán">
+            <a href="./thanhtoan.html">
+              <input type="button" value="Thanh toán" >
+            </a>
           </div>
         </div>
       </div>
-
        
     </div>
 
+    <div class="form_container_detail_voucher" id="detail_form_voucher1">
+      <div class="detail_form_voucher">
+        <div class="header_note_detail_voucher">
+          <div><h3>Điều kiện áp dụng</h3></div>
+          <div>
+            <a href="##" onclick="off_detail_voucher1()"><i class="fa-solid fa-x"></i></div></a>
+        </div>
+        <div class="content_note_detail_voucher">
+          <pre>
+            Chương trình Mega Sale 2022 - Bùng nổ cuối năm - Với muôn ngàn quà tặng hấp dẫn
+            - Giai đoạn 1: từ 11/11 đến 20/11
+              + Vàng PNJ
+              + Evoucher 1 triệu đồng
+              + Khoá học Galaxy 10 triệu đồng
+            - Giai đoạn 2: từ 25/11 đến 4/12
+              + Macbook Air M1
+              + Evoucher 1 triệu đồng
+              + Khoá học Galaxy 10 triệu đồng
+            - Giai đoạn 3: từ 09/12 đến 18/12
+              + Vàng PNJ
+              + Evoucher 1 triệu đồng
+              + Khoá học Galaxy 10 triệu đồng
+            - Giai đoạn 4: từ 21/12 đến 01/01/2023
+              + Tiền mặt 30.000.000 vnđ
+              + Học bổng 100% tại Galaxy trị giá 49.000.000 triệu đồng
+            *Lưu ý:
+            - Khách hàng không trúng giải ở giai đoạn trước sẽ được lưu thông tin và vẫn tham gia quay thưởng ở giai đoạn sau
+            - Càng nhiều đơn hàng cơ hội trúng giải càng cao
+          </pre>
+        </div>
+      </div>
+    </div>
+
+      
+    <div class="form_container_detail_voucher" id="detail_form_voucher2">
+      <div class="detail_form_voucher">
+        <div class="header_note_detail_voucher">
+          <div><h3>Điều kiện áp dụng</h3></div>
+          <div>
+            <a href="##" onclick="off_detail_voucher2()"><i class="fa-solid fa-x"></i></div></a>
+        </div>
+        <div class="content_note_detail_voucher">
+          <h3>MÃ GIẢM GIÁ</h3>
+            <p style="background-color: rgb(244,151,20); color:rgb(133, 82, 12);text-align: center;">Mã giảm giá 50K cho đơn hàng từ 500K</p>
+          <pre>
+            - Điều kiện áp dụng: áp dụng cho đơn hàng từ 500K, không áp dụng cho đơn hàng có sản phẩm Phiếu Quà Tặng
+            - Thời gian áp dụng: Đến hết Tháng 11
+            - Khách hàng có thể áp dụng cùng lúc với mã giảm phí vận chuyển
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
     <footer>
         <div class="footer_footer">
             <div class="footer1">

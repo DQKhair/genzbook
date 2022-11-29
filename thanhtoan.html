@@ -109,12 +109,37 @@
             </div>
   
             <div class="header__cark">
-              <i class="header__cark-icon fa-solid fa-cart-shopping" onclick="showcart()"  ></i>
-              <b id="countsp">0</b>
+              <a href="./donhang.html">
+                <i class="header__cark-icon fa-solid fa-cart-shopping"></i>
+                <b id="countsp">0</b>
+              </a>
             </div>
           </div>
         </div>
 </header>
+
+<nav>
+  <div class="Menu-top">
+      <ul class="nav-menu">
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li>
+          <a class="list_cate_home" href="#">Thể loại</a>
+          <div class="cate_list">
+            <ul>
+              <li><a href="./cate_vh.html">Sách văn học</a></li>
+              <li><a href="./cate_tn.html">Sách thiếu nhi</a></li>
+              <li><a href="./cate_gk.html">Sách giáo khoa</a></li>
+              <li><a href="./cate_nn.html">Sách học ngoại ngữ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./khuyenmai.html">Khuyến mãi</a></li>
+        <li><a href="./danhgia.html">Đánh giá</a></li>
+        <li><a href="./yeuthich.html">Yêu thích</a></li>
+        <li><a href="./donhang.html">Giỏ hàng</a></li>
+      </ul>
+    </div>
+</nav>
 
 <div class="content_thanhtoan">
     <form class="form1" action="" >
@@ -125,7 +150,7 @@
         <div class="content_form1">
             <h5>Họ và tên người nhận</h5>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Nguyễn Văn A">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nguyễn Văn A" required>
                 <label for="floatingInput">Nguyễn Văn A</label>
             </div>
 
@@ -137,7 +162,7 @@
 
             <h5>Số điện thoại</h5>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="ví dụ: 0979123xxx (10 ký tự số)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="ví dụ: 0979123xxx (10 ký tự số)" required>
                 <label for="floatingInput">ví dụ: 0979123xxx (10 ký tự số)</label>
             </div>
 
@@ -216,11 +241,15 @@
             <h1>Kiểm tra lại đơn hàng</h1>
         </div>
         <div class="content_form4">
+
+          <div class="group_form4">
             <div> <a href="#"><img src="./img/gk_book1.jpg" alt=""></a> </div>
             <div><p>Sách giải tích</p></div>
             <div> <p>97.000 đ</p> </div>
             <div> <p>1</p> </div>
             <div> <p>97.000 đ</p></div>
+          </div>
+
         </div>
     </form>
 

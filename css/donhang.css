@@ -222,3 +222,49 @@ display: block;
     background-color: rgb(219, 19, 19);
 
 }
+
+/* detail_note_voucher */
+.detail_form_voucher{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(244,151,20);
+    padding: 10px 0;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+}
+.detail_form_voucher .header_note_detail_voucher{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header_note_detail_voucher h3{
+    font-size: 25px;
+    width: 100%;
+    color: rgb(244,151,20);
+}
+.header_note_detail_voucher i{
+    color: rgb(244,151,20);
+}
+
+body{
+    position: relative;
+}
+
+.content_note_detail_voucher h3{
+    margin: 10px;
+}
+
+.form_container_detail_voucher{
+    background-color: rgba(192, 192, 192, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
