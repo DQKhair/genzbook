@@ -1,0 +1,89 @@
+body{
+    background-color: #ebe5e5;
+}
+.content_thanhtoan{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content_thanhtoan .form4,
+.content_thanhtoan .form3,
+.content_thanhtoan .form2,
+.content_thanhtoan .form1{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.content_thanhtoan .form1 h5{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.content_thanhtoan .form1 .form-select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+.content_thanhtoan .form2 .content_form2 span{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+.content_thanhtoan .form3 .header_form3,
+.content_thanhtoan .form2 .header_form2{
+    margin-bottom: 20px;
+}
+.content_thanhtoan .form2 .content_form2 input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 30px;
+}
+.content_thanhtoan .form4 .header_form4,
+.content_thanhtoan .form3 .header_form3,
+.content_thanhtoan .form2 .header_form2,
+.content_thanhtoan .form1 .header_form1{
+    border-bottom: 1px solid #ccc   ;
+}
+
+.header_form4{
+    margin-bottom: 30px;
+}
+
+.content_thanhtoan .form3 .content_form3 .form-control{
+    width: 30%;
+    float: left;
+    font-size: 15px;
+}
+
+.content_thanhtoan .form3 .content_form3 .btn{
+    padding: auto 10px auto 10px;
+    margin-left: 10px;
+}
+
+.content_form4{
+    display: flex;
+    justify-content: space-between;
+}
+.content_form4 p{
+    font-size: 20px;
+}
+.content_form4 img{
+    width: 200px;
+    height: 200px;
+}
+
+.btn_xac_nhan_thanh_toan{
+    width: 30%;
+    height: 50px;
+    background-color: red;
+    color: var(--white-color);
+    border: 1px solid red;
+    font-size: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
