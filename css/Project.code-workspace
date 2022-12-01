@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../2021-2022/LTWeb/TH/Project"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "project_genzbook"
+	}
+}

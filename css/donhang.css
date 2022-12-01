@@ -265,6 +265,40 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 4;
     display: none;
+}
+/* xem thêm voucher */
+.form_container_detail_voucher_xemthem{
+    background-color: rgb(255,243,243);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+}
+.group_all_voucher_detail{
+    margin: 30px;
+}
+.card_group_voucher h3{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.card_group_voucher a{
+    margin-left: 10px;
+}
+.card_group_voucher input{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(244,151,20);
+    color: #fff;
+    border: 1px solid rgb(244,151,20);
+    border-radius: 5px;
+    padding: 5px;
+}
+.card_group_voucher input:hover{
+    background-color:rgb(216,110,17) ;
 }
