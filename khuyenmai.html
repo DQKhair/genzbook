@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Genz Book</title>
+</head>
+<body>
+<header class="header">
+        <div class="grid">
+          <nav class="header-navbar">
+            <ul class="header_navbar-list">
+              <li class="header_navbar-item header_navbar-item--separate">
+                <i class="header__navbar-icon fas fa-phone-volume"></i> 0343483518
+              </li>
+              <li class="header_navbar-item header_navbar-item--separate">
+                <i class="header__navbar-icon fas fa-clock"></i> 07:00 - 22:00
+              </li>
+              <li class="header_navbar-item">
+                <span class="header_navbar--title-no-pointer">Connect</span>
+                <a href="https://www.facebook.com/K02IT/" class="header_navbar-icon-link"><i class="header__navbar-icon fab fa-facebook"></i></a>
+                <a href="" class="header_navbar-icon-link"><i class="header__navbar-icon fab fa-instagram"></i></a>
+              </li>
+            </ul>
+            <ul class="header_navbar-list">
+              <li class="header_navbar-item header_navbar-item header_navbar-item-has-notify">
+                <a href="" class="header_navbar-item-link">
+                  <i class="header__navbar-icon fas fa-bell"></i> Thông báo
+                </a>
+                <div class="header__notify">
+                  <div class="container-notify-header">
+                    <div class="notify-header-img"><img src="./img/logo.jpg" alt=""></div>
+                    <div class="notify-header-paragraph">
+                      <p>Đăng nhập để xem thông báo</p>
+                    </div>
+                  </div>
+  
+                  <div class="notify-footer">
+                    <ul>
+                      <li><a href="./login.html">Đăng nhập</a></li>
+                      <li><a href="./signup.html">Đăng ký</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header_navbar-item">
+                <a href="" class="header_navbar-item-link"></a>
+                <i class="header__navbar-icon fas fa-question-circle"></i> Trợ giúp
+                </a>
+              </li>
+              <li class="header_navbar-item header_navbar-item-header_navbar-item--separate">
+                <a id="valueusername" href="./login.html">Đăng nhập</a>
+              </li>
+              <li class="header_navbar-item header_navbar-item--strong"> 
+                <a onclick="Output()" id="logout" href="./signup.html">Đăng ký</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- header--with--search -->
+          <div class="header-with-search">
+            <div class="header__logo">
+              <div class="header-logo-img">
+                <a href="./index.html"><img src="./img/logo.jpg" alt="logo team UwU"></a>
+              </div>
+            </div>
+  
+            <div class="header__search">
+              <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+              <!-- list search -->
+              <div class="header__search-list">
+                <ul>
+                  <li>
+                    <a href="#">Sách phép</a>
+                  </li>
+                  <li>
+                    <a href="#">Sách Tiếng Việt</a>
+                  </li>
+                  <li>
+                    <a href="#">Sách hack facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">Sách học lập trình từ zero đến hero</a>
+                  </li>
+                </ul>
+              </div>
+                                 
+              <div class="header__search-selection">
+                <span class="header__search-selection-label" id="kq_address">Địa điểm</span>
+                <i class="header__search-selection-icon fas fa-sort-down"></i>
+                <ul class="sub_address">
+                  <li><a href="#" onclick="Address1()">Hà Nội</a></li>
+                  <li><a href="#"  onclick="Address2()">TP.HCM</a></li>
+                  <li><a href="#" onclick="Address3()">Đà Nẵng</a></li>
+                  <li><a href="#" onclick="Address4()">Tiền Giang</a></li>
+                  <li><a href="#" onclick="Address5()">TP.Cần Thơ</a></li>
+                  <li><a href="#">Khác...</a></li>
+                </ul>
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+  
+            <div class="header__cark">
+              <a href="./donhang.html">
+                <i class="header__cark-icon fa-solid fa-cart-shopping"></i>
+                <b id="countsp">0</b>
+              </a>
+            </div>
+          </div>
+        </div>
+</header>
+
+<nav>
+    <div class="Menu-top">
+        <ul class="nav-menu">
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li>
+            <a class="list_cate_home" href="#">Thể loại</a>
+            <div class="cate_list">
+              <ul>
+                <li><a href="./cate_vh.html">Sách văn học</a></li>
+                <li><a href="./cate_tn.html">Sách thiếu nhi</a></li>
+                <li><a href="./cate_gk.html">Sách giáo khoa</a></li>
+                <li><a href="./cate_nn.html">Sách học ngoại ngữ</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./khuyenmai.html">Khuyến mãi</a></li>
+          <li><a href="./danhgia.html">Đánh giá</a></li>
+          <li><a href="./yeuthich.html">Yêu thích</a></li>
+          <li><a href="./donhang.html">Giỏ hàng</a></li>
+        </ul>
+      </div>
+</nav>
+
+<div class="banner_cate">
+    <img src="./img/banner_sale.png" alt="">
+</div>
+
+<div class="content">
+    <div class="product_content">
+
+            <div class="card card_product">
+              <a href="./detail_product.html">
+                <img src="./img/vh_book1.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Nhà Giả Kim (Tái Bản 2020)</h5>
+                <p class="card-text">79.000 đ</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Đã bán 0</small>
+              </div>
+            </div>
+
+            <div class="card card_product">
+              <a href="./detail_product.html">
+                <img src="./img/vh_book2.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Cây Cam Ngọt Của Tôi</h5>
+                <p class="card-text">75.000 đ</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Đã bán 0</small>
+              </div>
+            </div>
+
+            <div class="card card_product">
+                 <a href="./detail_product.html">
+                   <img src="./img/vh_book3.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Số Đỏ</h5>
+                <p class="card-text">65.000 đ</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Đã bán 0</small>
+              </div>
+            </div>
+
+            <div class="card card_product">
+                 <a href="./detail_product.html">
+                   <img src="./img/vh_book4.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Ngàn Mặt Trời Rực Rỡ (Tái Bản 2019)</h5>
+                <p class="card-text">105.000 đ</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Đã bán 0</small>
+              </div>
+            </div>
+
+            <div class="card card_product">
+                <a href="./detail_product.html">
+                  <img src="./img/img_vh/vh_cate1.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Bước Chậm Lại Giữa Thế Gian Vội Vã (Tái Bản 2018)</h5>
+                  <p class="card-text">85.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+            </div>
+  
+              <div class="card card_product">
+                <a href="./detail_product.html">
+                  <img src="./img/img_vh/vh_cate2.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Chuyện Kể Rằng Có Nàng Và Tôi</h5>
+                  <p class="card-text">57.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+              </div>
+  
+              <div class="card card_product">
+                   <a href="./detail_product.html">
+                     <img src="./img/img_vh/vh_cate3.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Ra Bờ Suối Ngắm Hoa Kèn Hồng - Tặng Kèm Bookmark Bồi Hai Mặt + Thiệp Trái Tim In Bài Thơ Của Tác Giả</h5>
+                  <p class="card-text">116.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+              </div>
+  
+              <div class="card card_product">
+                   <a href="./detail_product.html">
+                     <img src="./img/img_vh/vh_cate4.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Những Đêm Không Ngủ Những Ngày Chậm Trôi</h5>
+                  <p class="card-text">68.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+              </div>
+              
+              <div class="card card_product">
+                <a href="./detail_product.html">
+                  <img src="./img/img_vh/vh_cate5.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Tâm An Ắt Bình An</h5>
+                  <p class="card-text">73.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+              </div>
+    
+              <div class="card card_product">
+                <a href="./detail_product.html">
+                  <img src="./img/img_vh/vh_cate6.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Hai Số Phận (Tái Bản 2018)</h5>
+                  <p class="card-text">124.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+              </div>
+    
+              <div class="card card_product">
+                   <a href="./detail_product.html">
+                     <img src="./img/img_vh/vh_cate7.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Phía Sau Nghi Can X (Tái Bản 2019)</h5>
+                  <p class="card-text">87.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+              </div>
+    
+              <div class="card card_product">
+                   <a href="./detail_product.html">
+                     <img src="./img/sale_book4.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Sự Tích Các Loài Vật</h5>
+                  <p class="card-text">36.000 đ</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Đã bán 0</small>
+                </div>
+            </div>
+            
+        </div>
+</div>
+
+<footer>
+    <div class="footer_footer">
+        <div class="footer1">
+          <h2>Chăm sóc khách hàng</h2>
+          <ul>
+            <li><a href="">Trung Tâm Trợ Giúp</a></li> <br/>
+            <li><a href="">Hướng Dẫn Mua Hàng</a></li><br/>
+            <li><a href="">Hướng Dẫn Bán Hàng</a></li><br/>
+            <li><a href="">Thanh Toán</a></li><br/>
+            <li><a href="">Vận Chuyển</a></li><br/>
+            <li> Chăm Sóc Khách Hàng: <a href="">cskh@genzbook.vn</a></li><br/>
+            <li>Báo Lỗi Bảo Mật: <a href=""> security@genzbook.vn</a></li>
+          </ul>
+        </div>
+        <div class="footer2">
+          <h2>GenZ Book</h2>
+          <ul>
+            <li><a href="">Giới Thiệu</a></li> <br/>
+            <li><a href="">Tuyển Dụng</a></li><br/>
+            <li><a href="">Điều Khoản</a></li><br/>
+            <li><a href="">Chính Sách Bảo Mật</a></li><br/>
+            <li><a href="">Chương Trình tiếp Thị</a></li><br/>
+            <li><a href="">Liên Hệ Truyền Thông</a></li>
+          </ul>
+        </div>
+        <div class="footer3">
+          <h2>Ứng dụng GenZ Book</h2>
+          <ul>
+            <li><a href=""><i class="fab fa-facebook"></i> Facebook</a></li> <br/>
+            <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li><br/>
+            <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li><br/>
+            <li><a href=""><i class="fab fa-viber"></i> Viber</li></a>
+          </ul>
+        </div>
+        <div class="footer4">
+          <h2> Địa chỉ Công Ty </h2>
+          <ul>
+            <li><a href=""><b>Địa chỉ: </b>828 Sư Vạn Hạnh, Phường 13,<br/><br/> Quận 10, TP. Hồ Chí Minh</a></li><br/>
+            <li><a href=""> <b>Điện thoại:</b>(+84) 38 632 052</a></li><br/>
+            <li><a href=""><b>Fax:</b>(+84 28) 38 650 991</a></li><br/>
+            <li><a href=""><b>Email:</b>genzbook@gmail.com</a></li><br/>
+            <img src="./img/logo.jpg" alt="./index.html">
+          </ul>
+        </div>
+      </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

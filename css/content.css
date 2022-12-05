@@ -1,7 +1,7 @@
 .content{
     margin-bottom: 30px;
     margin-top: 30px;
-    width: 80%;
+    width: 90%;
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -18,16 +18,29 @@
     margin: 3px;
 }
 
+.product_content {
+    display: flex;
+    flex-flow: wrap;
+}
+
 .content .card {
-    border: none;
+    width: 22%;
+    height: 500px;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+        /* display: inline-block;
+        float: left; */
+    
 }
 .content .card-group{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.content .card_product img{
-    width: 361px;
-    height: 361px;
+.content .card_product a{
+    width: 100%;
+    height: 70%;
 }
 
 .content img.card-img-top {
