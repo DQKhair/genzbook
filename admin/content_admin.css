@@ -1,0 +1,165 @@
+.container_admin{
+    display: flex;
+}
+.left_content_admin{
+    background-color: #1F2937 ;
+    width: 20%;
+}
+.header_left_content_admin h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content_left_content_admin a,
+.header_left_content_admin h3{
+    color: var(--white-color);
+    font-size: 20px;
+    text-align: center;
+}
+.hover_user_admin ul{
+    margin-top: 10px;
+}
+.hover_user_admin ul,
+.content_left_content_admin ul{
+    padding: 0;
+}
+.content_left_content_admin li{
+    padding: 15px 20px 15px 20px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 5px;
+
+}
+.content_left_content_admin li:hover{
+    background-color: #757575;
+}
+/* right content */
+.right_content{
+    width: 80%;
+}
+.right_content .icon i{
+    font-size: 20px;
+}
+
+.right_content .user_admin{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.right_content .user_admin p{
+    font-size: 20px;
+    text-align: center;
+}
+.right_content .user_admin img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.right_content .header_right_content_admin{
+    
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cecece;
+}
+
+.content_right_content_admin{
+    margin-top: 30px;
+    height: 100%;
+}
+.hover_user_admin{
+    position: absolute;
+    width: 10%;
+    background-color: #ececec;
+    top: 9%;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #757575;
+    display: none;
+}
+.hover_user_admin li:hover{
+    background-color: rgb(156, 154, 154);
+}
+.hover_user_admin li{
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hover_user_admin i,
+.hover_user_admin a{
+    color: #000;
+    font-size: 17px;
+    
+}
+.hover_user_admin a{
+    margin-left: 5px;
+}
+.content_right_content_admin .content_form{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.content_form span{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+.content_form input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 15px;
+}
+.content_form h5{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.content_form .form-select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    width: 50%;
+}
+.container_admin .content_form #btn_xacnhan{
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+    width: 50%;
+    height: 35px;
+    font-size: 20px;
+}
+.container_admin .content_form #btn_xacnhan:hover{
+    background-color: rgb(170, 9, 9);
+}
+/* đưa sản phẩm lên web */
+
+.content_right_content_admin .card{
+    margin: 10px 20px 10px 20px;
+}
+
+.content_right_content_admin .card .card-text{
+    font-size: 15px;
+}
+.content_right_content_admin .card .card-title{
+    font-size: 20px;
+}
+.content_right_content_admin .card .btn-primary{
+    font-size: 20px;
+    background-color: red;
+    border: 1px solid red;
+}
+.content_right_content_admin .card .btn-primary:hover{
+    background-color: rgb(139, 11, 11);
+}
