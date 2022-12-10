@@ -259,7 +259,7 @@ body{
 }
 
 .form_container_detail_voucher{
-    background-color: rgb(255,243,243);
+    background-color: rgb(243, 165, 101);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -270,7 +270,7 @@ body{
 }
 /* xem thêm voucher */
 .form_container_detail_voucher_xemthem{
-    background-color: rgb(255,243,243);
+    background-color: rgb(243, 165, 101);
     position: absolute;
     top: 0;
     bottom: 0;

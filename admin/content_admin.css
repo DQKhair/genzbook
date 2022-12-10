@@ -163,3 +163,10 @@
 .content_right_content_admin .card .btn-primary:hover{
     background-color: rgb(139, 11, 11);
 }
+
+.them_moi_nv{
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+    background-color: blue;
+    border: 1px solid blue;
+}
